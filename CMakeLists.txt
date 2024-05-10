@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.19)
 include(CMakeDependentOption)
-
+OPENCV=1
 option(CMAKE_VERBOSE_MAKEFILE "Create verbose makefile" OFF)
 option(CUDA_VERBOSE_BUILD "Create verbose CUDA build" OFF)
 option(BUILD_SHARED_LIBS "Create dark as a shared library" ON)
@@ -18,8 +18,8 @@ option(ENABLE_DEPLOY_CUSTOM_CMAKE_MODULES "Copy custom CMake modules for downstr
 option(ENABLE_CSHARP_WRAPPER "Enable building a csharp wrapper" OFF)
 option(ENABLE_INSTALLER "Enable building an installer" OFF)
 option(VCPKG_BUILD_OPENCV_WITH_CUDA "Build OpenCV with CUDA extension integration" ON)
-option(VCPKG_USE_OPENCV2 "Use legacy OpenCV 2" OFF)
-option(VCPKG_USE_OPENCV3 "Use legacy OpenCV 3" OFF)
+option(VCPKG_USE_OPENCV2 "Use legacy OpenCV 2" on)
+option(VCPKG_USE_OPENCV3 "Use legacy OpenCV 3" on)
 option(VCPKG_USE_OPENCV4 "Use OpenCV 4" ON)
 option(USE_NSIS "Use NSIS as a CPack backend on Windows" ON)
 
